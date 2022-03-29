@@ -1,2 +1,2 @@
-DROP DATABASE IF EXISTS dogprice_db;
-CREATE DATABASE dogprice_db;
+DROP DATABASE IF EXISTS hotdog_db;
+CREATE DATABASE hotdog_db;
