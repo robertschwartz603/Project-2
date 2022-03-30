@@ -1,5 +1,5 @@
 const User = require('./User');
-const Hotdog = require('./Hotdog');
+const Hotdog = require('./hotdog');
 
 User.hasMany(Hotdog, {
     foreignKey: 'user_id',
