@@ -1,0 +1,23 @@
+[
+    {
+      "location": "Hotdogs in the Hallway",
+      "description": "We're proud to offer the highest quality, most unique hotdogs, sides, and merchandise on the market today.",
+      "reading": 4.3
+    },
+    {
+      "location": "Doogie's",
+      "description": " Made-to-order fast food including gigantic hot dogs plus burgers, lobster rolls & cheesesteaks.",
+      "reading": 4.5
+    },
+    {
+      "location": "Frankies",
+      "description":"Must Try Hot Dog Toppings. This is an excellent pin with sooo many delicious ways to top a hot dog!.",
+      "reading": 4.5
+    },
+    {
+      "location": "Frankie's Family Restaurant",
+      "description": " Local fast-food chain serving hot dogs, sandwiches, fried seafood & more in a casual setting.",
+      "reading":4.6
+    }
+  ]
+  
