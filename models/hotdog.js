@@ -13,12 +13,13 @@ Project.init(
     //   primaryKey: true,
     //   autoIncrement: true,
     // },
-    name: {
+    location: {
       type: DataTypes.STRING,
       allowNull: false,
     },
     description: {
       type: DataTypes.STRING,
+      allowNull: false, //added
     },
     rating: {
       type: DataTypes.INTEGER,
