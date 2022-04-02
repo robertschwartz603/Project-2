@@ -7,12 +7,12 @@ Hotdog.init(
   {
     // IF WE DECIDE HOTDOGS NEED ID'S - uncomment below
 
-    // id: {  
-    //   type: DataTypes.INTEGER,
-    //   allowNull: false,
-    //   primaryKey: true,
-    //   autoIncrement: true,
-    // },
+    id: {  
+      type: DataTypes.INTEGER,
+      allowNull: false,
+      primaryKey: true,
+      autoIncrement: true,
+    },
     location: {
       type: DataTypes.STRING,
       allowNull: false,
