@@ -2,7 +2,7 @@ const router = require('express').Router();
 const { Hotdog } = require('../../models');
 const withAuth = require('../../utils/auth');
 
-routerpost('/', withAuth, async (req, res) => {
+router.post('/', withAuth, async (req, res) => {
     try {
         const newHotdog = await Project.create({
             ...req.body,
