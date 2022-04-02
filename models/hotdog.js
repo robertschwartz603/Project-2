@@ -3,7 +3,7 @@ const sequelize = require('../config/connection');
 
 class Hotdog extends Model {}
 
-Project.init(
+Hotdog.init(
   {
     // IF WE DECIDE HOTDOGS NEED ID'S - uncomment below
 
