@@ -1,0 +1,57 @@
+{{#each hotdogs as |hotdog| }}
+<div class="row mb-4 project">
+  <div class="col-md-5">
+    <h2>
+      <!-- Call helper function with triple brackets to render the pics span as HTML -->
+     {{{get_pics}}}
+      <a href="/hotdog/{{hotdog.user_id}}">{{hotdog.location}}</a>
+    </h2>
+    
+    <p>
+      rating:{{hotdog.rating}}
+    
+    </p>
+    <p>Created by {{hotdog.user.name}} on {{format_date hotdog.date_created}}</p>
+  </div>
+  <div class="col-md-7">
+    <p>
+      {{hotdog.description}}
+    </p>
+  </div>
+</div>
+{{/each}}
+
+
+<!--main page-->
+
+
+<div class="header_hero">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-6 col-10 mx-auto">
+        <div class="header_hero_text ">
+          <h2 class="heading-1"> HOTDOG REVIEWS AND RATINGS</h2>
+          <P>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat, iure ex. Debitis tempora quia eveniet
+            quaerat odit animi. Harum explicabo amet quia rem non dignissimos veritatis itaque sit beatae ea!
+          </P>
+          <div class="header_text_btn">
+
+            <a href="./views/reviews"><button class="itemBtn btn-lg btn-outline-dark">Reviews</button></a>
+
+          </div>
+        </div>
+      </div>
+      <!--images-->
+      <div class="col-lg-6 col-10 mx-auto">
+        <figure class="header_hero__img">
+          <img src="assets/163-1633077_dancing-hot-dog-png-give-me-that-hot.png" alt="" />
+        </figure>
+
+      </div>
+
+    </div>
+
+  </div>
+
+  </div>
