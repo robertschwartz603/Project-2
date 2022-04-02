@@ -2,11 +2,11 @@ const newFormHandler = async (event) => {
     event.preventDefault();
   
     const name = document.querySelector('#project-name').value.trim();
-    const needed_funding = document.querySelector('#project-rating').value.trim();
+    const rating = document.querySelector('#project-rating').value.trim();
     const description = document.querySelector('#project-desc').value.trim();
   
     if (name && rating && description) {
-      const response = await fetch(`/api/projects`, {
+      const response = await fetch(`/api/hotdogs`, {
         method: 'POST',
         body: JSON.stringify({ name, rating, description }),
         headers: {
@@ -17,7 +17,7 @@ const newFormHandler = async (event) => {
       if (response.ok) {
         document.location.replace('/profile');
       } else {
-        alert('Failed to create project');
+        alert('Failed to create hotog. you suck');
       }
     }
   };
@@ -26,14 +26,14 @@ const newFormHandler = async (event) => {
     if (event.target.hasAttribute('data-id')) {
       const id = event.target.getAttribute('data-id');
   
-      const response = await fetch(`/api/projects/${id}`, {
+      const response = await fetch(`/api/hotdogs/${id}`, {
         method: 'DELETE',
       });
   
       if (response.ok) {
         document.location.replace('/profile');
       } else {
-        alert('Failed to delete project');
+        alert('Failed to delete hotdog');
       }
     }
   };
