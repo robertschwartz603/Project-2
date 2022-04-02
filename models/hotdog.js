@@ -38,7 +38,7 @@ Hotdog.init(
     timestamps: false,
     freezeTableName: true,
     underscored: true,
-    modelName: 'project',
+    modelName: 'hotdog',
   }
 );
 
