@@ -3,6 +3,6 @@ const userRoutes = require('./userRoutes');
 const hotdogRoutes = require('./hotdogRoutes');
 
 router.use('/users', userRoutes);
-router.use('/hotdog', hotdogRoutes);
+router.use('/hotdogs', hotdogRoutes);
 
 module.exports = router;
