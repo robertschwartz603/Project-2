@@ -31,7 +31,7 @@
   <div class="col-md-6 project-list">
     <h3>Current Review:</h3>
 
-    {{#each hotdogs as||hotdog}}
+    {{#each hotdogs as |hotdog|}}
     <div class="row mb-2">
       <div class="col-md-8">
         <h4><a href="/hotdog/{{hotdog.id}}">{{hotdog.location}}</a></h4>
