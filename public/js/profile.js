@@ -6,7 +6,7 @@ const newFormHandler = async (event) => {
     const description = document.querySelector('#project-desc').value.trim();
   
     if (name && rating && description) {
-      const response = await fetch(`/api/hotdog`, {
+      const response = await fetch(`/api/hotdogs`, {
         method: 'POST',
         body: JSON.stringify({ name, rating, description }),
         headers: {
@@ -26,7 +26,7 @@ const newFormHandler = async (event) => {
     if (event.target.hasAttribute('data-id')) {
       const id = event.target.getAttribute('data-id');
   
-      const response = await fetch(`/api/hotdog/${id}`, {
+      const response = await fetch(`/api/hotdogs/${id}`, {
         method: 'DELETE',
       });
   
