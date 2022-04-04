@@ -19,7 +19,7 @@ Showing currently reviews near you.
     Andrew Maki
     Robert Schartz
     Desara Doko
-    Prathibha
+    Prathibha Vadakkini Purakkal
 
  # Technologies Used
 

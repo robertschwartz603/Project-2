@@ -13,7 +13,7 @@ router.get('/', async (req, res) => {
             ],
         });
 
-        const hotdogs = projectData.map((hotdog) => hotdog.get({ plain: true }));
+        const hotdogs = hotdogData.map((hotdog) => hotdog.get({ plain: true }));
 
         res.render('homepage', {
             hotdogs,
@@ -24,7 +24,7 @@ router.get('/', async (req, res) => {
     }
 });
 
-router.get('/hotdogs/:id', async (req, res) => {
+router.get('/hotdog/:id', async (req, res) => {
     try {
         const hotdogData = await Hotdog.findByPk(req.params.id, {
             include: [
