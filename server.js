@@ -47,7 +47,7 @@ app.use((req, res) => {
 
 // use { force: true } if updating the models, then switch back.
 sequelize.sync({
-    force: true
+    force: false
 }).then(() => {
     app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
 });
