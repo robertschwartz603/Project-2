@@ -30,19 +30,32 @@
   {{#if hotdogs.length}}
   <div class="col-md-6 project-list">
     <h3>Current Review:</h3>
+    
+{{#each hotdogs as |hotdog|}}
+    <table  class="table">
+         <thead class="bg-light">
+           <tr class="table-dark">
 
-    {{#each hotdogs as |hotdog|}}
-    <div class="row mb-2">
-      <div class="col-md-8">
-        <h4><a href="/hotdog/{{hotdog.id}}">{{hotdog.location}}</a></h4>
+          <td>
+      <div class="row mb-4">
+        <div class="col-md-8">
+            <h4><a href="/hotdog/{{hotdog.id}}">{{hotdog.location}}</a></h4>
+        </div>
+         
+         </td>
+         <td>
+        <div class="col-md-4 p-2 float-end">
+       
+          <button class="btn btn-sm btn-danger" data-id="{{hotdog.id}}">DELETE</button>
+        </div>
       </div>
-      <div class="col-md-4">
-        <button class="btn btn-sm btn-danger" data-id="{{hotdog.id}}">DELETE</button>
-      </div>
+      </td>
+      {{/each}}
     </div>
-    {{/each}}
+    {{/if}}
+    </tr>
+    </thread>
+    </table>
   </div>
-  {{/if}}
-</div>
-
+  </div>
 <script src="./js/profile.js"></script>
