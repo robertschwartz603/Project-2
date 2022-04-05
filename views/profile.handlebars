@@ -30,8 +30,8 @@
   {{#if hotdogs.length}}
   <div class="col-md-6 project-list">
     <h3>Current Review:</h3>
-
-    {{#each hotdogs as||hotdog}}
+    
+{{#each hotdogs as |hotdog|}}
     <table  class="table">
          <thead class="bg-light">
            <tr class="table-dark">
@@ -58,6 +58,4 @@
     </table>
   </div>
   </div>
- 
-    
 <script src="./js/profile.js"></script>
