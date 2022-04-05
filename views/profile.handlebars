@@ -32,17 +32,32 @@
     <h3>Current Review:</h3>
 
     {{#each hotdogs as||hotdog}}
-    <div class="row mb-2">
-      <div class="col-md-8">
-        <h4><a href="/hotdog/{{hotdog.id}}">{{hotdog.location}}</a></h4>
-      </div>
-      <div class="col-md-4">
-        <button class="btn btn-sm btn-danger" data-id="{{hotdog.id}}">DELETE</button>
-      </div>
-    </div>
-    {{/each}}
-  </div>
-  {{/if}}
-</div>
+    <table  class="table">
+         <thead class="bg-light">
+           <tr class="table-dark">
 
+          <td>
+      <div class="row mb-4">
+        <div class="col-md-8">
+            <h4><a href="/hotdog/{{hotdog.id}}">{{hotdog.location}}</a></h4>
+        </div>
+         
+         </td>
+         <td>
+        <div class="col-md-4 p-2 float-end">
+       
+          <button class="btn btn-sm btn-danger" data-id="{{hotdog.id}}">DELETE</button>
+        </div>
+      </div>
+      </td>
+      {{/each}}
+    </div>
+    {{/if}}
+    </tr>
+    </thread>
+    </table>
+  </div>
+  </div>
+ 
+    
 <script src="./js/profile.js"></script>
