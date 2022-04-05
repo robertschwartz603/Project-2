@@ -12,9 +12,7 @@ router.get('/', async (req, res) => {
                 },
             ],
         });
-
         const hotdogs = hotdogData.map((hotdog) => hotdog.get({ plain: true }));
-
         res.render('homepage', {
             hotdogs,
             logged_in: req.session.logged_in
@@ -23,12 +21,11 @@ router.get('/', async (req, res) => {
         res.status(500).json(err);
     }
 });
-
 /* route for reviews*/
 router.get('/reviews', async (req, res) => {
     try {
-      // Get all projects and JOIN with user data
-      const projectData = await Project.findAll({
+      // Get all hotdogs and JOIN with user data
+      const hotdogData = await Hotdog.findAll({
         include: [
           {
             model: User,
@@ -36,13 +33,11 @@ router.get('/reviews', async (req, res) => {
           },
         ],
       });
-  
       // Serialize data so the template can read it
-      const projects = projectData.map((project) => project.get({ plain: true }));
-  
+      const hotdogs = hotdogData.map((hotdog) => hotdog.get({ plain: true }));
       // Pass serialized data and session flag into template
       res.render('reviews', { 
-        projects, 
+        hotdogs, 
         logged_in: req.session.logged_in 
       });
     } catch (err) {
