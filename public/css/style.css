@@ -107,7 +107,16 @@ body{
              height:70vh;
              filter:drop-shadow(0 1.5rem 1rem rgba(0,0,0.8));
             /* animation:infinite 10s linear infinite alternate;*/
-    
-    
+
         }
+           .star{
+                color: lightgray;
+              }
+              
+              .star.glow {
+                color: brown;
+              }
+    
+        
+        
     
