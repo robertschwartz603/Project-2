@@ -1,11 +1,12 @@
 <div class="row">
   <div class="col-auto">
-    <h2>Welcome, {{name}}!</h2>
+    <h2>Welcome,<span style ="color:yellow;"></span> {{name}}!</h2>
   </div>
 </div>
 
 <div class="row mt-4">
-  <div class="col-md-6">
+  <div class="col-md-4">
+     <div class="p-8"> 
     <h3>Create a New review:</h3>
 
     <form class="form new-project-form">
@@ -29,7 +30,7 @@
 
   {{#if hotdogs.length}}
   <div class="col-md-6 project-list">
-    <h3>Current Review:</h3>
+    <h2>Current Review:</h2>
     
 {{#each hotdogs as |hotdog|}}
     <table  class="table">
@@ -44,7 +45,7 @@
          
          </td>
          <td>
-        <div class="col-md-4 p-2 float-end">
+        <div class="col float-end">
        
           <button class="btn btn-sm btn-danger" data-id="{{hotdog.id}}">DELETE</button>
         </div>
