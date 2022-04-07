@@ -1,14 +1,14 @@
 const newFormHandler = async (event) => {
     event.preventDefault();
   
-    const name = document.querySelector('#project-name').value.trim();
+    const location = document.querySelector('#project-name').value.trim();
     const rating = document.querySelector('#project-rating').value.trim();
     const description = document.querySelector('#project-desc').value.trim();
-  
-    if (name && rating && description) {
+    console.log(location, rating, description);
+    if (location && rating && description) {
       const response = await fetch(`/api/hotdogs`, {
         method: 'POST',
-        body: JSON.stringify({ name, rating, description }),
+        body: JSON.stringify({ location, rating, description }),
         headers: {
           'Content-Type': 'application/json',
         },
