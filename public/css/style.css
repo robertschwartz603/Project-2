@@ -51,7 +51,7 @@ body{
         padding: 7px 14px;
     }
     
-    .login:hover, .logout:hover {
+    .login:hover, .logout:hover,.btn-primary:hover {
         box-shadow:0 0 0 46px #e6b71f  inset;
        /*-webkit-transform : scale(1);*/
         color:black
