@@ -5,13 +5,13 @@ body{
             height:100vh;   
             width:100%;
             position:absolute;
-            color:rgb(205, 39, 10);
+            color:#e64c66;
            background-color:rgb(21, 21, 19);
         }
     header{
         background: linear-gradient(rgba(26, 34, 54, 0),rgb(21, 90, 202));
     }
-    .project:not(:last-child) {
+    .project {
         border-bottom: 1px solid #ccc;
         /*background: linear-gradient(rgba(15, 17, 17, 0),rgb(27, 42, 38));*/
         background-color:rgb(54, 54, 59);
@@ -93,8 +93,11 @@ body{
         
         }
         p{
-            font-size:1.8 rem ;
-            margin-bottom:5 rem ;
+            
+        font-size:20px;       
+       
+        font-weight: 100;
+          
             
         }
         .header_text_btn{
@@ -110,4 +113,18 @@ body{
     
     
         }
-    
+        .manimg {
+            border: 0;
+            left: 0px;
+            position: relative;
+            top: 0px;
+            border-radius: 8px;
+         
+            display: block;
+       
+        
+       
+            height: 114px;
+        
+            width: 125px;
+        }
