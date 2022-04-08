@@ -5,7 +5,7 @@ body{
             height:100vh;   
             width:100%;
             position:absolute;
-            color:#e64c66;
+            color:black;
            background-color:rgb(21, 21, 19);
         }
     header{
@@ -96,7 +96,7 @@ body{
             
         font-size:20px;       
        
-        font-weight: 100;
+        font-weight:bolder;
           
             
         }
