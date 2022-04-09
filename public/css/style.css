@@ -72,13 +72,13 @@ body{
     filter:drop-shadow(0 1.5rem 1rem rgba(255,255,255,0.5));
     }
     .header_hero{
-        background-image: url('/assets/556f0d4feab8ea9d2b7a7615.webp');
+        background-image: url('/assets/pexels-dimka-nevedimka-9374721.jpg');
        background-size: cover;
-       height:70vh;
+       height:100vh;
        width:100%;
        display:flex;
         justify-content: center;
-        flex-direction: column;
+        /* flex-direction: column; */
         
         }
     
@@ -88,8 +88,9 @@ body{
             font-size: 3rem;
             margin-bottom: 3 rem;
             line-height: 150%;
-            font-family: 'Overseer';
+            font-family: sans-serif;
             font-weight:600 ;
+            filter:drop-shadow(0 1.5rem 1rem rgba(0,0,0.8));
         
         }
         p{
