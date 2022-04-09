@@ -7,6 +7,9 @@ const helpers = require('./utils/helpers'); // <-- ADD IF HELPERS NEEDED
 
 const sequelize = require('./config/connection');
 const SequelizeStore = require('connect-session-sequelize')(session.Store);
+require('dotenv').config();
+const nodemailer = require('nodemailer');
+const log = console.log;
 
 const app = express();
 const PORT = process.env.PORT || 3001;
@@ -43,6 +46,38 @@ app.use(routes);
 app.use((req, res) => {
     res.status(404).end();
 });
+
+// Step 1
+let transporter = nodemailer.createTransport({
+    service: 'gmail',
+    auth: {
+        user: process.env.EMAIL, // TODO: your gmail account 
+        pass: process.env.PASSWORD // TODO: your gmail password
+    }
+});
+
+// Step 2
+let mailOptions = {
+    from: 'eben21775@gmail.com', // TODO: email sender
+    to: 'pratibha.indel@gmail.com', // TODO: email receiver
+    subject: 'Nodemailer - Test',
+    text: 'Wooohooo it works!!',
+    attachments: [
+        { filename: 'welcome.png', path: './welcome.png' } // TODO: replace it with your own image
+    ]
+};
+
+// Step 3
+transporter.sendMail(mailOptions, (err, data) => {
+    if (err) {
+        return log('Error occurs',err);
+    }
+    return log('Email sent!!!');
+});
+
+
+
+
 
 
 // use { force: true } if updating the models, then switch back.
