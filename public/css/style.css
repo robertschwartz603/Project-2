@@ -5,7 +5,7 @@ body{
             height:100vh;   
             width:100%;
             position:absolute;
-            color:#e64c66;
+            color:white;
            background-color:rgb(21, 21, 19);
         }
     header{
@@ -54,7 +54,7 @@ body{
     .login:hover, .logout:hover,.btn-primary:hover {
         box-shadow:0 0 0 46px #e6b71f  inset;
        /*-webkit-transform : scale(1);*/
-        color:black
+        color:white;
     }
     
     
@@ -96,7 +96,7 @@ body{
             
         font-size:20px;       
        
-        font-weight: 100;
+        font-weight:bolder;
           
             
         }
